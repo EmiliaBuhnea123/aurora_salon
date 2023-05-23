@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Buhnea Emilia" />
+  <meta name="keywords" content="salon, frumusețe, îngrijire personală" />
+  <meta name="revised" content="22/05/2023" />
+
+  <title>CONTACTE</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+<body>
+ <div class="page-container">
+
+  <nav class="menu">
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../pages/about us.html">DESPRE NOI</a></li>
+      <li><a href="../pages/tratamente.html">TRATAMENTE</a></li>
+      <li><a href="../pages/contacte.html">CONTACTE</a></li>
+    </ul>
+
+    <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+
+    <aside class="dropdown-menu dropdown-menu-pages" id="side-menu">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../pages/about us.html">DESPRE NOI</a></li>
+      <li><a href="../pages/tratamente.html">TRATAMENTE</a></li>
+      <li><a href="../pages/contacte.html">CONTACTE</a></li>
+  </aside>
+  </nav>
+
+  <div>
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21661.70053166206!2d11.356811910839838!3d47.26132360000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d6be475578c39%3A0x73846b69d40d024f!2sKosmetikinstitut%20Aurora!5e0!3m2!1sro!2s!4v1682164802536!5m2!1sro!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <main class="contacts">
+
+    <div class="row">
+
+      <div class="contact-cell">
+        <h3 id="text">Date de contact:</h3>
+       
+        <a href="+43 (0) 512 214411" class="contact-link">
+        <i class="fas fa-phone-alt"></i>
+        <span>+43 (0) 512 214411</span>
+        </a>
+<br>
+        <a href="+43 (0) 676 5214411" class="contact-link">
+        <i class="far fa-envelope"></i>
+        <span>+43 (0) 676 5214411</span>
+        </a>
+<br>
+        <a href="info@kosmetik-aurora.at" class="contact-link">
+        <i class="fab fa-whatsapp" style="color: #000000;"></i>
+        <span>info@kosmetik-aurora.at</span>
+        </a>
+      </div>
+
+        <div class="contact-form">
+          <form name="formular" action="submit.htm" method="post" onsubmit="return validateForm()">
+            <input type="text" placeholder="NUME" class="input" id="name" name="name">
+            <input type="text" placeholder="EMAIL" class="input" id="email">
+            <textarea rows="3" placeholder="MESAJ" class="input" id="textarea"></textarea>
+            <input type="submit" value="SUBMIT" class="button">
+          </form>
+        </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-menu">
+      <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../pages/about us.html">DESPRE NOI</a></li>
+      <li><a href="../pages/tratamente.html">TRATAMENTE</a></li>
+      <li><a href="../pages/contacte.html">CONTACTE</a></li>
+      </ul>
+    </div>
+   <div class="copy">Copyright &copy; 2023</div> 
+  </footer> 
+</div> 
+
+
+</body>
+</html>

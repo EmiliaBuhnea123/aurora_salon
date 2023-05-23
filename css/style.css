@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Quicksand&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(219, 174, 122);
+  border-radius: 3px;
+}
+
+body{
+  background-color: whitesmoke;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  min-height: 100vh;
+}
+
+.page-container{
+  min-height: 100vh;
+}
+
+/* STILIZARE PAGINA HOME */
+
+.banner video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background_video video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.background_video::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content{
+  font-size: 50px;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: black;
+  }
+
+.banner .content{
+  z-index: 1;
+  position: absolute;
+}
+
+div.meniu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.meniu li{
+  margin: 0 5px;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul{
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  display: flex;
+}
+
+.menu a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu li{
+  margin: 0 30px;
+}
+
+/* STILIZARE PAGINA CONTACTE */
+
+nav{
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: 1;
+  top: 0;
+}
+
+.footer-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 30px;
+}
+
+.footer-menu ul{
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  display: flex;
+}
+
+.footer-menu a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-menu li{
+  margin: 0 30px;
+}
+
+.map{
+  position: relative;
+  top: 75px;
+  width: 100%;
+}
+
+.contacts{
+  margin-top: 100px;
+}
+
+.contact-form{
+  opacity: 0.8;
+  max-width: 500px;
+  padding: 5px 15px 20px 15px;
+  width: 70%;
+  position: relative;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  color: rgb(73, 71, 71); 
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  backdrop-filter: blur(1.5px);
+  box-shadow: 0px 3px 15px rgb(87, 87, 87);
+}
+
+.contact-form input, textarea{
+  display: block;
+  width: 90%;
+  margin: 15px auto 0px auto;
+  resize: none;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px rgb(87, 87, 87);
+}
+
+.input{
+  color: rgb(77, 77, 77);
+}
+
+.button{
+  background-color: rgb(196, 165, 119);
+  opacity: 0.8;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.contact-link{
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+  font-size: 20px;
+}
+
+.contact-link:hover{
+  color: rgb(196, 165, 119);
+  font-weight: bold;
+}
+
+#text{
+  font-size: 30px;
+  color: rgb(77, 77, 77);
+}
+
+i{
+  margin-left: 25px;
+}
+
+.row{
+  display: flex;
+}
+
+.contact-cell, .contact-form{
+  display: inline-block;
+  margin: 10px auto auto auto;
+}
+
+footer{
+  background-color: #000;
+  opacity: 0.9;
+  position: sticky;
+  top: 100%;
+  height: 120px;
+  margin-top: 100px; 
+}
+
+.copy{
+  color: whitesmoke;
+  position: absolute;
+  top: 60%;
+  left: 43%;
+}
+
+/* STILIZARE PAGINA 'DESPRE NOI' */
+
+.description-box{
+  position: relative;
+  top: 100px;
+  padding: 0 50px 0 50px;
+  color: rgb(77, 77, 77);
+}
+
+h3{
+  text-align: center;
+  position: relative;
+}
+
+.description{
+  border-left: 5px solid rgb(196, 165, 119);
+  padding-left: 10px;
+}
+
+.video{
+  display: block;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  height: 50vh; 
+  max-width: 100%;
+}
+
+#team-link{
+  color: #000;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#team-link:hover{
+  color: rgb(196, 165, 119);
+}
+
+/* STILIZARE PAGINA 'ECHIPA' */
+.team-description-box{
+  position: relative;
+  top: 20px;
+  padding: 0 50px 0 50px;
+  color: rgb(77, 77, 77);
+}
+
+.container{
+  display: flex;
+}
+
+.team-photos{
+  margin-top: 30px;
+}
+
+.team-photos img{
+  width: 350px;
+  height: auto;
+  margin: 20px;
+  padding-left: 50px;
+  transition: all 0.3s;
+}
+
+.team-photos img:hover{
+  transform: scale(1.05);
+  transition: all 0.3s; 
+}
+
+.team_1{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.name h2, h3{
+  text-align: center;
+  margin-top: -10px;
+}
+
+.name h3{
+  color: rgb(196, 165, 119);
+}
+
+/* STILIZARE PAGINA 'TRATAMENTE' */
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+}
+
+.animated-circle{
+  margin-top: 100px;
+  width: 250px;
+  height: 250px;
+  background-color: rgb(196, 165, 119);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.treatment{
+  color: whitesmoke;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+/* dropdown-menu */
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  right: 0.5rem;
+  top: 50px;
+  width: 200px;
+  background:rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dropdown-menu-pages{
+  top: 65px;
+  width: 100%;
+  background:rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(0.7px);
+  right: 0;
+}
+
+.dropdown-menu li{
+  list-style-type: none;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-btn{
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  top: 22px;
+  right: 25px;
+  display: none;
+  cursor: pointer;
+  z-index: 1;}
+
+.show{
+  display: block !important;
+}
+
+.background-image{
+  background-image: url(../images/4227764_10026\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+}
+
+.titlu{
+  text-align: center;
+  position: relative;
+  top: 100px;
+  margin-bottom: 30px;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: rgb(73, 71, 71);
+}
+
+.first-line{
+  display: flex;
+}
+
+.cell-1, .cell-2{
+  display: inline-block;
+  margin: 50px auto 30px auto;
+}
+
+.treatments{
+  position: relative;
+  top: 70px;
+  padding: 20px;
+  width: 550px;
+  height: 500px;
+  border-radius: 10px;
+  color: rgb(73, 71, 71); 
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  backdrop-filter: blur(1.5px);
+  box-shadow: 0px 3px 15px rgb(87, 87, 87);
+  overflow-y: auto;
+}
+
+p{
+  color: rgb(165, 113, 35);
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media(max-width:768px){
+
+  .footer-menu{
+   position: relative;
+   top: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+   .footer-menu a{
+    font-size: 17px;
+  }
+
+  .footer-menu li{
+    margin: 0px 10px;
+  } 
+
+  .animated-circle{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .treatment{
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+  }
+
+  .container{
+    position: relative;
+    top: 50px;
+  }
+
+  i{
+    margin-left: 0;
+  }
+
+  .container{
+    display: block;
+  }
+
+  .video{
+   width: 400px;
+  }
+
+
+
+  #menu-btn{
+    display: block;
+}
+
+.meniu{
+  display: none;
+}
+
+.menu ul{
+  display: none;
+}
+
+  aside{
+    display: none;
+
+  }
+
+  .row{
+    display: block;
+    margin-left: 50px;
+  }
+
+#text{
+  margin-left: 30px;
+}
+  i{
+    margin-left: 80px;
+  }
+
+  .contact-form{
+    width: 400px;
+    margin-top: 50px;
+  }
+
+  .first-line{
+    display: block;
+  }
+
+  .treatments{
+    width: 450px;
+    height: auto;
+    margin: 5px 20px 5px 20px;
+  }
+
+}
